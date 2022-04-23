@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "osm-forum-trolls-extension",
+  "version": "0.0.1",
+  "description": "Hide OSM forum trolls",
+  "content_scripts": [
+    {
+      "matches": [ 
+        "https://forum.openstreetmap.org/viewtopic.php*"
+      ],
+      "all_frames": false,
+      "js": ["content.js"],
+      "run_at":  "document_idle"
+    }
+  ],
+  "host_permissions": [
+    "https://forum.openstreetmap.org/"
+  ]
+}
