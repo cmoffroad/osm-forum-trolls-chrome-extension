@@ -1,6 +1,8 @@
-const trolls = [ 9390 ];
-const links = trolls.map(id => `a[href="profile.php?id=${id}"]`);
-const elements = document.querySelectorAll(links.join(', '));
-for (var i = 0, l = elements.length; i < l; i++) {
-  elements[i].closest('.blockpost').style.display = 'none';
+const trolls = [ 'Bernhard Hiller' ];
+const elements = document.querySelectorAll('strong');
+for (let i = 0, l = elements.length; i < l; i++) {
+  const strong = elements[i];
+  if (trolls.includes(strong.textContent)) {
+    strong.closest('.blockpost').style.display = 'none';
+  }
 }
