@@ -1,7 +1,7 @@
 # osm-forum-trolls-chrome-extension
 
 Hide automatically OSM forum posts from well-known trolls.
-No more waisting time reading their constant negative comments, complaints.
+No more waisting time reading their constant negative comments, complaints and cyberbulling.
 
 ## How to install
 
